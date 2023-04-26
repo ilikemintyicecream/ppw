@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&family=Poppins&display=swap');
+
+.NavbarItems {
+    display:flex;
+    justify-content: flex-end;
+    
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 0px 30px;
+    background-color: rgb(66, 66, 66);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+   width: 90%;
+    height: 80px;
+    border-radius: 13px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.NavLinks{
+    
+    color: aliceblue;
+    display: flex;
+    padding:0 15px;
+   
+    align-items: center;
+    margin-left: 20px;
+}
+.Navlinks:hover {
+color: aqua;
+}
+.NavText{
+    padding-left: 7px;
+}
+
+.NavText:hover {
+    color:rgb(128, 238, 238);
+   transition: all 0.4s ease;
+}
+
+ .toggle-icon{
+    display: none;
+}
+.logo{
+    display: block;
+    color: #D9D2C3;
+    position: absolute;
+    top: 25px;
+    left: 30px;
+}
+
+@media(max-width: 900px){
+    .NavbarItems{
+        position: relative;
+        
+     
+        transition: 0.5s height ease-in-out;
+    }
+    .NavbarItems .NavLinks {
+        display: none;
+    }
+
+  .navbarExpanded{
+   display: flex;
+   flex-direction: column;
+ 
+   background-color: rgb(66, 66, 66);
+   align-items: center;
+   align-content: center;
+   font-size: 1.2em;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+   width: 90%;
+    height: 10em;
+    border-radius: 13px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+
+  }
+  .toggle-icon{
+    display: block;
+    align-self:flex-end;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+  .navbarExpanded .NavLinks {
+    margin-top: 15px;
+  }
+  
+   .navbarExpanded .logo{
+    display: block;
+    color: #D9D2C3;
+    position: absolute;
+    top: 25px;
+    left: 30px;
+  }
+.NavbarItems .logo {
+    position: absolute;
+    top: 25px;
+    left: 30px;
+}
+}
