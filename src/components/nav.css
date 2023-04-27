@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&family=Poppins&display=swap');
 
+
 .NavbarItems {
     display:flex;
     justify-content: flex-end;
@@ -27,11 +28,29 @@
     align-items: center;
     margin-left: 20px;
 }
-.Navlinks:hover {
-color: aqua;
+
+.NavText::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    
+    top: 30px;
+    left: 0;
+    background-color: aqua;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.NavText:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 .NavText{
     padding-left: 7px;
+    display: inline-block;
+    position: relative;
+    color: aliceblue;
 }
 
 .NavText:hover {
@@ -67,16 +86,17 @@ color: aqua;
  
    background-color: rgb(66, 66, 66);
    align-items: center;
-   align-content: center;
-   font-size: 1.2em;
+   justify-content: center;
+   font-size: 1.8em;
    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
    width: 90%;
-    height: 10em;
+    height: 95%;
     border-radius: 13px;
     position: fixed;
     top: 20px;
     left: 50%;
     transform: translate(-50%);
+    z-index: 9;
 
   }
   .toggle-icon{
@@ -87,7 +107,8 @@ color: aqua;
     right: 30px;
   }
   .navbarExpanded .NavLinks {
-    margin-top: 15px;
+    margin: 35px;
+    
   }
   
    .navbarExpanded .logo{
