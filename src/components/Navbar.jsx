@@ -2,8 +2,11 @@ import React, { useState } from 'react';
 import { AiOutlineHome, AiOutlineUser, AiOutlinePhone} from "react-icons/ai";
 import {BiPaint} from 'react-icons/bi'
 import{FaBars, FaTimes} from 'react-icons/fa'
+import { motion } from 'framer-motion';
 
 import './nav.css'
+
+
 
 const Navbar = () => {
   const style = { color: "white", fontSize: "1.5em"}
@@ -18,7 +21,10 @@ const Navbar = () => {
 return(<>
 
  
- <nav className={toggle? 'navbarExpanded' : 'NavbarItems'}>
+ <motion.nav
+
+ className={toggle? 'navbarExpanded' : 'NavbarItems'}>
+
  <h1 className='logo'>logo</h1>
 
 
@@ -56,7 +62,7 @@ return(<>
  </div>
 
  
- </nav>
+ </motion.nav>
  </>
 
 )}
