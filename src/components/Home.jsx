@@ -1,11 +1,13 @@
 import Navbar from "./Navbar";
 import './home.css'
 import {styles} from '../styles'
-import 'animate.css'
-import { motion } from "framer-motion";
 import developer from '../assets/developer.svg'
+import Footer from "./Footer"; 
+import Type from "./Type";
 
-
+const style = {
+  
+}
 
 
 const Home = () => {
@@ -18,10 +20,11 @@ const Home = () => {
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
           hi, i am <span className="headtext" >
-          Deen</span></h1>
-         
-          <p>i develop web application and<br className='sm: block: hidden'/> 3d visuals Lorem, ipsum dolor sit<br className='sm:block hidden'/> amet consectetur adipisicing elit. Dolores, quis! </p>
+          deen</span></h1>
+          
+          <p className={`${styles.heroSubText}`}>i am proficient in<span className="text-cyan-300"><Type /> </span> </p>
         </div>
+       
       
        </div>
        
@@ -31,6 +34,7 @@ const Home = () => {
       
    
     </section>
+     <Footer />
     </>
   
     )
