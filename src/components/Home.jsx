@@ -1,8 +1,6 @@
-import Navbar from "./Navbar";
 import './home.css'
 import {styles} from '../styles'
 import developer from '../assets/developer.svg'
-import Footer from "./Footer"; 
 import Type from "./Type";
 
 const style = {
@@ -13,7 +11,7 @@ const style = {
 const Home = () => {
     return (
         <>
-     <Navbar />
+   
     <section className='hero flex flex-wrap justify-items-center
 '>
       <div className={`${styles.paddingX} mt-16 mx-auto  sm:mt-32 md:mt-36 lg:mt-36  xl:mt-36 2xl:mt-48`}>
@@ -34,7 +32,7 @@ const Home = () => {
       
    
     </section>
-     <Footer />
+   
     </>
   
     )
