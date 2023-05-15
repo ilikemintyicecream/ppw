@@ -1,8 +1,8 @@
-import me from '../assets/me.jpg';
+
 import {styles} from '../styles';
-import {motion} from 'framer-motion';
+
 import  Tilt  from 'react-parallax-tilt';
-import './about.css';
+import '../index.css';
 
 import clang from '../assets/clang.svg';
 import python from '../assets/python.svg';
@@ -24,7 +24,7 @@ const About = () => {
    <div className='main'>
 
    <div className='profile'>
-<img className='about' src={about} alt='my-photo'/>
+<img className='svg-img2' src={about} alt='my-photo'/>
 <div className='profile-details'>
  
     <h2 className={styles.heroHeadText}>About <span className='highlight'>me ?</span></h2>
@@ -39,7 +39,7 @@ user-friendly websites.</p>
   
 
     
-<div className='skill-section'>
+<div className='section-profile'>
 <h1 className={styles.heroHeadText}><span className='highlight'>Languages</span> i use</h1>
 <Tilt>
     <div className='tech'>

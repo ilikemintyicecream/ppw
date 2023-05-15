@@ -1,22 +1,17 @@
-import './home.css'
+import '../index.css'
 import {styles} from '../styles'
 import developer from '../assets/developer.svg'
 import Type from "./Type";
 
-const style = {
-  
-}
-
 
 const Home = () => {
     return (
-        <>
+    <>
    
-    <section className='hero flex flex-wrap justify-items-center
-'>
-      <div className={`${styles.paddingX} mt-16 mx-auto  sm:mt-32 md:mt-36 lg:mt-36  xl:mt-36 2xl:mt-48`}>
+    <section className='hero'>
+      <div className={`section ${styles.paddingX}`}>
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
+          <h1 className={`${styles.heroHeadText}`}>
           hi, i am <span className="headtext" >
           deen</span></h1>
           
@@ -28,7 +23,7 @@ const Home = () => {
        
       
     
-      <img src={developer} className="mt-32 object-cover mx-auto h-80 lg:mt-40 xl:h-96 2xl:h-max" alt="developer-image"/>
+      <img src={developer} className="svg-img" alt="developer-image"/>
       
    
     </section>

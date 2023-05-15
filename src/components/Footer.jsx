@@ -1,5 +1,5 @@
 import './footer.css'
-import { AiOutlineGithub, AiOutlineTwitter } from 'react-icons/ai'
+import { AiOutlineGithub, AiFillLinkedin } from 'react-icons/ai'
 
 const Footer = () => {
     return (
@@ -17,8 +17,8 @@ const Footer = () => {
 
  <div className='icons'>
   
- <a className='icon' href="/">< AiOutlineGithub/></a>
-<a className='icon' href="/">< AiOutlineTwitter/></a>
+ <a className='icon' href="https://github.com/ilikemintyicecream">< AiOutlineGithub/></a>
+<a className='icon' href="https://www.linkedin.com/in/deen-mohammad-9b0b8a192/">< AiFillLinkedin/></a>
 </div>  
 
 

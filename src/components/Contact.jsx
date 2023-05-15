@@ -1,7 +1,7 @@
 import contact from '../assets/contact.svg'
 import { useState, useRef } from 'react';
 import {styles} from '../styles';
-import './contact.css'
+import '../index.css'
 
 const Contact = () => {
     const formRef = useRef();
@@ -23,26 +23,25 @@ const Contact = () => {
 
     return (
 
-    <div className='contact-page'>
+<div className='profile'>
 
 
-<div className='icon-svg'>
-<img src={contact} alt='contact-svg'/>
-</div>
-         
+
+<img className='svg-img3' src={contact} alt='contact-svg'/>
+ 
         
 
-<div className='icon-svg'>
+<div className='profile-details'>
        
 <p className={styles.heroSubText}>Get in touch</p>
-<h3 className={styles.heroHeadText}>Contact</h3>
+<h3 className={styles.heroHeadText}><span className='highlight'>Contact</span></h3>
 
         <form
         ref={formRef}
         onSubmit={handleSubmit}
         >
             <label>
-                <span>your name</span>
+                <span className='label-text'>your name</span>
                 <input
                 type='text'
                 name='name'
@@ -53,7 +52,7 @@ const Contact = () => {
             </label>
 
             <label>
-                <span>your email</span>
+                <span className='label-text'>your email</span>
             <input
                 
                 type='email'
@@ -65,9 +64,9 @@ const Contact = () => {
             </label>
 
             <label>
-                <span> your message</span>
+                <span className='label-text'> your message</span>
                 <textarea
-                rows={4}
+                rows={9}
                 name='message'
                 value={form.message}
                 onChange={handleChange}
