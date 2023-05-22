@@ -35,7 +35,7 @@ import { styles } from '../styles';
 
 
 
-                        <div className='profile'>
+                        <div className='profile2'>
                         <h1 className={styles.heroHeadText}>My <span className='highlight'>work</span> </h1>
                         <div className='gallery'>
                               <img src={ds2} alt="art"/>

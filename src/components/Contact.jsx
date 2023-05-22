@@ -24,8 +24,8 @@ const Contact = () => {
         setLoading(true);
 
         emailjs.send(
-            'service id',
-            'template id',
+            'service_id',
+            'template_id',
             {
                 from_name: form.name,
                 to_name: 'deen',
@@ -33,7 +33,7 @@ const Contact = () => {
                 to_email: 'deenusaifi8851@gmail.com',
                 message: form.message,
             },
-            'public key'
+            'public_key'
         )
         .then(() => {
             setLoading(false);

@@ -63,11 +63,17 @@ body,html {
 /* about end */
 
 /*hobbies start*/
+.profile2{
+    text-align: center;
+    margin-top: 12rem;
+}
 .gallery{
+    
     display: flex;
     justify-content: center;
    
     flex-wrap: wrap;}
+
 
     
 .svg-icon{
@@ -157,6 +163,9 @@ p{
     .profile{
         margin-top: 8rem;
     }
+    .profile2{
+        margin-top: 8rem;
+    }
     .profile-details{
         margin-top: 4rem;
     }
@@ -189,6 +198,7 @@ p{
 }
 
 @media (min-width: 1024px) {
+   
     .section{
         margin-top: 9rem/* 144px */;
     }
