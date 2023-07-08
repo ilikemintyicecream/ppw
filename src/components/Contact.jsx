@@ -4,7 +4,9 @@ import { useState, useRef } from 'react';
 import {styles} from '../styles';
 import '../index.css'
 
-
+//template_4ef6gdf
+//service_vkok97x
+//oSlNEgHCHRuC_6nMl
 
 const Contact = () => {
     const formRef = useRef();
@@ -24,8 +26,8 @@ const Contact = () => {
         setLoading(true);
 
         emailjs.send(
-            'service_id',
-            'template_id',
+            'service_vkok97x',
+            'template_4ef6gdf',
             {
                 from_name: form.name,
                 to_name: 'deen',
@@ -33,7 +35,7 @@ const Contact = () => {
                 to_email: 'deenusaifi8851@gmail.com',
                 message: form.message,
             },
-            'public_key'
+            'oSlNEgHCHRuC_6nMl'
         )
         .then(() => {
             setLoading(false);
